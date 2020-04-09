@@ -1,6 +1,8 @@
 # ws
 
-# Projeto proposto no workshop rocketseat.
+# Casa Criativa
+
+Projeto proposto no workshop rocketseat.
 
 Objetivo é criar um site para captar ideias e atividades criativas em tempos quarentena por conta do Covid-19.
 
