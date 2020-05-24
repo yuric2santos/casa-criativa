@@ -1,27 +1,7 @@
-
-/*
-Css
-
-Cascading StyleSheet
-
-Box
-    conteiner
-    conteúdo da caixa
-    
-    Espaçamento
-    Largura
-    altura
-    Bordas
-    Preenchimentos
-    
-    Posicionamentos
-    
-    */
-
-    /* Global */
+/* Global */
     
 body {
-    background: #e5e5e5;
+    background: #f8f7ff;
     color: #25282b;
 
     font-family: 'Montserrat', sans-serif;
@@ -29,12 +9,24 @@ body {
     margin: 0;
 }
 
+* {
+    --color: #9381ff;
+    --shadow: rgba(15, 13, 105, 0.2);
+    --colorhouve: #4b267b;
+
+}
+
 body.hideScroll {
     overflow: hidden;
 }
 
+.logo {
+    width: 100%;
+    max-width: 280px;
+}
+
 a {
-    color: #ff5e84;
+    color: var(--color);
     font-weight: bold;
     text-decoration: none;
 }
@@ -51,7 +43,7 @@ p, .description {
 
 .button {
     color: white;
-    background: #ff5e84;
+    background: var(--color);
     
     width: 150px;
     height: 40px;
@@ -65,11 +57,11 @@ p, .description {
     align-items: center;
     justify-content: center;
     
-    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
+    box-shadow: 0px 8px 16px var(--shadow);
 }
 
 .button:hover {
-    background-color: #0984e3;
+    background-color: var(--colorhouve);
     text-decoration: none;
 }
 
@@ -82,13 +74,14 @@ p, .description {
     margin: 40px auto;
     
     display: flex;
-    
 }
 
 #intro {
-    width: 300px;
-    
     margin-right: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
 }
 
 main {
@@ -106,7 +99,7 @@ main {
 
 button {
     background: none;
-    color: #ff5e84;
+    color: var(--color);
     border: none;
     
     font-size: 14px;
@@ -171,7 +164,7 @@ footer a {
 /* modal */
 
 #modal {
-    background: #ff5e84;
+    background: #b8b8ff;
     
     position: fixed;
     top: 0;
@@ -197,8 +190,8 @@ footer a {
 
 #modal .content h1 {
     text-align: center;
-    
     text-transform: uppercase;
+    margin-top: 50px;
 }
 
 #modal form {
@@ -211,7 +204,17 @@ footer a {
     grid-template-columns: 1fr 1fr;
     
     gap: 20px;
-    
+}
+
+.enviar {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enviar button {
+    margin-top: 0;
 }
 
 .content form div:nth-child(3),
@@ -229,7 +232,7 @@ form textarea {
     box-sizing: border-box;
     
     border-radius: 6px;
-    border: 1px solid rgba(141, 25, 52, 0.5);
+    border: 1px solid var(--shadow)
     
     outline: none;
     
@@ -267,7 +270,7 @@ form a {
 
 form a:hover {
     background: #fff;
-    color: #ff5e84;
+    color: var(--color);
 
     text-decoration: none;
 }
@@ -292,7 +295,7 @@ form button{
 }
 
 form button:hover{
-    background-color: #0984e3;
+    background-color: var(--colorhouve);
     color: white;
     
     text-decoration: none;
@@ -367,3 +370,82 @@ section#ideias,
 footer {
     margin-top: 64px;
 }
+
+
+/* responsivo */
+
+@media (max-width: 979px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #intro {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #intro > a {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    footer {
+        margin-top: 20px;
+    }
+
+    #page-ideias section#ideias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page-ideias section#ideias .idea {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    #modal form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #modal form .enviar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    form button {
+        margin-top: 0;
+    }
+
+    #page-ideias header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page-ideias nav {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #page-ideias section#ideias .idea {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #page-ideias section#title, section#ideias {
+        margin-top: 40px;
+    }
+}
+

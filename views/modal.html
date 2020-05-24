@@ -1,11 +1,10 @@
  <!-- Modal -->
-
+ 
 <div id="modal" class="hide">
     <div class="content">
             <h1>Nova Ideia</h1>
 
-            <form action="">
-            
+            <form action="/" method="POST" onsubmit="return checkFields(event)"> 
                 <div class="input-wrapper">
                     <label for="tittle">Título da Ideia</label>
                     <input type="text" name="title">
@@ -17,8 +16,8 @@
                 </div>
 
                 <div class="input-wrapper"> 
-                    <label for="imagem">Link da imagem</label>
-                    <input type="url" name="imagem">
+                    <label for="image">Link da imagem</label>
+                    <input type="url" name="image">
                 </div>
 
                 <div class="input-wrapper">
@@ -31,10 +30,11 @@
                     <input type="url" name="link">
                 </div>
                 
+                <div class="enviar">
                 <a href="#" onclick="onoff()">Voltar</a>
                 <button>Salvar</button>
+                </div>
 
             </form>
-
     </div>
 </div>   
