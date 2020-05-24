@@ -1,11 +1,30 @@
-# ws
-
 # Casa Criativa
 
-Projeto proposto no workshop rocketseat.
+Casa Criativa
 
-Objetivo é criar um site para captar ideias e atividades criativas em tempos quarentena por conta do Covid-19.
+Projeto Web desenvolvido na Semana OmniStack 11.0 da Rockeatseat
 
-Esse é o primeiro projeto que me aventuro a codar. 
+A proposta da aplicação é cadastrar e listar, ideias e atividades criativas para passar o tempo em casa. Nos tempos de quarentena.
 
-Veremos os resultados! ; )
+# Tecnologias
+- [x]  Html
+- [x]  Css
+- [x]  JavaScript
+- [x]  NodeJs
+- [x]  ExpressJs
+- [x]  SQLite3
+- [x]  Nunjucks
+
+# Tutorial
+
+- Baixar as dependências
+
+    npm install
+
+- Rodar o projeto
+
+    npm run dev
+
+- Rodar o banco, caso seja necessário
+
+    node db.js
