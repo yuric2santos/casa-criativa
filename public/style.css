@@ -1,11 +1,7 @@
-/*
-Css
-Cascading StyleSheet
-
 /* Global */
     
 body {
-    background: #e5e5e5;
+    background: #f8f7ff;
     color: #25282b;
 
     font-family: 'Montserrat', sans-serif;
@@ -14,12 +10,19 @@ body {
 }
 
 * {
-    --color: #ff5e84;
-    --shadow: rgba(141, 25, 52, 0.5);
+    --color: #9381ff;
+    --shadow: rgba(15, 13, 105, 0.2);
+    --colorhouve: #4b267b;
+
 }
 
 body.hideScroll {
     overflow: hidden;
+}
+
+.logo {
+    width: 100%;
+    max-width: 280px;
 }
 
 a {
@@ -54,11 +57,11 @@ p, .description {
     align-items: center;
     justify-content: center;
     
-    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
+    box-shadow: 0px 8px 16px var(--shadow);
 }
 
 .button:hover {
-    background-color: #0984e3;
+    background-color: var(--colorhouve);
     text-decoration: none;
 }
 
@@ -71,13 +74,14 @@ p, .description {
     margin: 40px auto;
     
     display: flex;
-    
 }
 
 #intro {
-    width: 300px;
-    
     margin-right: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
 }
 
 main {
@@ -160,7 +164,7 @@ footer a {
 /* modal */
 
 #modal {
-    background: var(--color);
+    background: #b8b8ff;
     
     position: fixed;
     top: 0;
@@ -291,7 +295,7 @@ form button{
 }
 
 form button:hover{
-    background-color: #0984e3;
+    background-color: var(--colorhouve);
     color: white;
     
     text-decoration: none;
