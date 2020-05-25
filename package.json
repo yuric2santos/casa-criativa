@@ -1,5 +1,5 @@
 {
-  "name": "ws",
+  "name": "casa-criativa",
   "version": "1.0.0",
   "description": "# Casa Criativa",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuric2santos/ws.git"
+    "url": "git+https://github.com/yuric2santos/casa-criativa.git"
   },
   "keywords": [],
   "author": "Yuri Santos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yuric2santos/ws/issues"
+    "url": "https://github.com/yuric2santos/casa-criativa/issues"
   },
-  "homepage": "https://github.com/yuric2santos/ws#readme",
+  "homepage": "https://github.com/yuric2santos/casa-criativa#readme",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.3",

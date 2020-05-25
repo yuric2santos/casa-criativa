@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose()
-const db = new sqlite3.Database('./ws.db')
+const db = new sqlite3.Database('./casa-criativa.db')
 
 db.serialize(function() {
 
@@ -15,7 +15,7 @@ db.serialize(function() {
         );
     `)
 
-   // Inserir dado na Tabela
+    // Inserir dado na Tabela
 //    const query = `
 //    INSERT INTO ideas(
 //        image,
@@ -32,7 +32,7 @@ db.serialize(function() {
 //        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptas minus aliquid quibusdam dolorum suscipit animi facilis eaque, reprehenderit modi necessitatibus repellat omnis magni ex veritatis eius velit. Nobis, quae?",
 //        "https://rocketseat.com.br/",
 //    ]
-
+//
 //    db.run(query, values, function(err) {
 //        if (err) return console.log(err)
 

@@ -6,6 +6,8 @@ Projeto Web desenvolvido na Semana OmniStack 11.0 da Rockeatseat
 
 A proposta da aplicação é cadastrar e listar, ideias e atividades criativas para passar o tempo em casa. Nos tempos de quarentena.
 
+![](public/casacriativa-home.png)
+
 # Tecnologias
 - [x]  Html
 - [x]  Css
